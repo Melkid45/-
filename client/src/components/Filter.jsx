@@ -12,8 +12,8 @@ export default function Filter() {
     setNewPlace({ city: '', name: ''});
     console.log(places)
   }
-  const OpenCLick = () => {
-    document.querySelector('.filter__select-body-choose').classList.toggle('active')
+  const OpenCLick = (e) => {
+    e.target.closest('div').querySelector('.filter__select-body-choose').classList.toggle('active')
   }
   return (
     

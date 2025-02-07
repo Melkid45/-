@@ -8,10 +8,12 @@ import Registration__Company from './pages/RegistCompany.jsx'
 import Registration__User from './pages/RegistUser.jsx'
 import Auth from './pages/Auth.jsx'
 import Favorite from './pages/Favorite.jsx'
+import UserAccount from './pages/UserAccount.jsx'
+import CompanyAccount from './pages/CompanyAccount.jsx'
 
 
 
-import {Firma_Route , Girls_Route, Salon_Route, Girl_Route, Guy_Route, Registration__Company_Route, Registration__User_Route, Auth_Route, Favorite_Route, Home_Route} from "./utils/const";
+import {Firma_Route , Girls_Route, Salon_Route, Girl_Route, Guy_Route, Registration__Company_Route, Registration__User_Route, Auth_Route, Favorite_Route, Home_Route, User_Account_Route , Company_Account_Route} from "./utils/const";
 
 // export const authRoutes = [
 //     {
@@ -63,6 +65,14 @@ export const publicRoutes = [
     {
         path: Favorite_Route,
         Component: Favorite
+    },
+    {
+        path: User_Account_Route,
+        Component: UserAccount
+    },
+    {
+        path: Company_Account_Route,
+        Component: CompanyAccount
     },
     
 ]

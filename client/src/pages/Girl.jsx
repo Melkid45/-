@@ -9,13 +9,16 @@ import Like from '../assets/icons/like.svg'
 import Tel from '../assets/icons/tel.png'
 import Favor from '../assets/icons/favor.png'
 
-
+import Card from '../assets/icons/girl__card.svg'
+import Check from '../assets/icons/check.svg'
+import Video from '../assets/images/firma__video.png'
 import One from '../assets/icons/girl/1.svg'
 import Two from '../assets/icons/girl/2.svg'
 import Three from '../assets/icons/girl/3.svg'
 import Four from '../assets/icons/girl/4.svg'
 import Five from '../assets/icons/girl/5.svg'
 import Six from '../assets/icons/girl/6.svg'
+import Comments from '../components/Comments'
 export default function Girl() {
   return (
     <div className='girl'>
@@ -159,7 +162,7 @@ export default function Girl() {
                 </div>
               </div>
               <div className="girl__body-card-end-param">
-                <span className='girl__body-card-end-param-title'></span>
+                <span className='girl__body-card-end-param-title'>Параметры:</span>
                 <div className="girl__body-card-end-param-block">
                   <div className="girl__body-card-end-param-block-item">
                     <img src={One} alt="" />
@@ -186,11 +189,139 @@ export default function Girl() {
                     <span>42</span>
                   </div>
                 </div>
+                <div className="girl__body-card-end-param-desc">
+                  <div className="girl__body-card-end-param-desc-item">
+                    <span>Национальность:</span>
+                    <span>Русская</span>
+                  </div>
+                  <div className="girl__body-card-end-param-desc-item">
+                    <span>Финура:</span>
+                    <span>10 из 10</span>
+                  </div>
+                  <div className="girl__body-card-end-param-desc-item">
+                    <span>Волосы:</span>
+                    <span>Блондинка</span>
+                  </div>
+                </div>
               </div>
+              <div className="girl__body-card-end-job">
+                  <span className="girl__body-card-end-job-title">
+                  Место работы :
+                  </span>
+                  <div className="girl__body-card-end-job-wrap">
+                    <span>Индивидуалка </span>
+                    <button className="girl__body-card-end-job-wrap-card">
+                      <img src={Card} alt="" />
+                      На карте
+                    </button>
+                  </div>
+                  <span className="girl__body-card-end-job-place">
+                    Находится по адресу: г. (название), ул. (название), д. №, Центр
+                  </span>
+              </div>
+              <div className="girl__body-card-end-meet">
+                <span className="girl__body-card-end-meet-title">
+                При встречи возможно:
+                </span>
+                <div className="girl__body-card-end-meet-block">
+                  <div className="girl__body-card-end-meet-block-col">
+                    <div className="girl__body-card-end-meet-block-col-item">
+                      <img src={Check} alt="" />
+                      <span>Классический секс </span>
+                    </div>
+                    <div className="girl__body-card-end-meet-block-col-item">
+                      <img src={Check} alt="" />
+                      <span>Минет в презервативе</span>
+                    </div>
+                    <div className="girl__body-card-end-meet-block-col-item">
+                      <img src={Check} alt="" />
+                      <span>Минет без презерватива</span>
+                    </div>
+                    <div className="girl__body-card-end-meet-block-col-item">
+                      <img src={Check} alt="" />
+                      <span>Страпон</span>
+                    </div>
+                  </div>
+                  <div className="girl__body-card-end-meet-block-col">
+                    <div className="girl__body-card-end-meet-block-col-item">
+                      <img src={Check} alt="" />
+                      <span>Госпожа</span>
+                      <p>+ 5000</p>
+                    </div>
+                    <div className="girl__body-card-end-meet-block-col-item">
+                      <img src={Check} alt="" />
+                      <span>БДСМ</span>
+                    </div>
+                    <div className="girl__body-card-end-meet-block-col-item">
+                      <img src={Check} alt="" />
+                      <span>Лезби-шоу</span>
+                      <p>+ 5000</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="girl__body-card-end-about">
+                <span>Коротко о себе:</span>
+                <p>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt cum ad mollitia? Necessitatibus incidunt obcaecati alias repellendus quasi eligendi aliquid, minima cum accusantium rem, totam veritatis vitae harum nesciunt ipsam.
+                  Culpa doloribus quod dolor ea totam minima tempore officia error aliquid ab magni iste delectus neque, illo non hic ad voluptatibus. Hic voluptates voluptatibus libero facilis, odit eaque molestias sint!
+                  Iure libero minima incidunt dolorum nemo, necessitatibus temporibus! Alias assumenda explicabo in vitae voluptate ex pariatur accusantium. Tenetur commodi fugiat hic dicta a, reprehenderit ipsum, numquam vel cum magnam quasi?
+                </p>
+              </div>
+              <div className="girl__body-card-end-right">
+                <span className="girl__body-card-end-right-title">
+                Требования к гостям:
+                </span>
+                <ul className="girl__body-card-end-right-list">
+                  <li>
+                    <span>Ограничения по возрасту:</span>
+                    <span>От 20 До 30</span>
+                  </li>
+                  <li>
+                    <span>Использование презерватива:</span>
+                    <p>Да</p>
+                  </li>
+                  <li>
+                    <span>Количество контактов:</span>
+                    <p>1</p>
+                  </li>
+                  <li>
+                    <span>Фейс-контроль:</span>
+                    <p>Да</p>
+                  </li>
+                  <li>
+                    <span>Алкогольное, наркотическое опьянение:</span>
+                    <p>Нет</p>
+                  </li>
+                </ul>
+                <span className='girl__body-card-end-right-imp'>Важно!</span>
+              </div>
+              
             </div>
           </div>
           <div className="girl__body-bot">
-            
+          <div className="firma__body-video">
+              <span className="firma__body-video-title">
+              Видео:
+              </span>
+              <div className="firma__body-video-block">
+                <div className="firma__body-video-block-item">
+                  <img src={Video} alt="" />
+                </div>
+                <div className="firma__body-video-block-item">
+                  <img src={Video} alt="" />
+                </div>
+                <div className="firma__body-video-block-item">
+                  <img src={Video} alt="" />
+                </div>
+                <div className="firma__body-video-block-item active">
+                  <div className="grad"></div>
+                  <img src={Video} alt="" />
+                  <span>+ 30</span>
+                </div>
+              </div>
+          </div>
+          <Comments/>
           </div>
         </div>
       </div>

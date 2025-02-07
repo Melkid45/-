@@ -3,9 +3,21 @@ import AuthImg from '../assets/icons/auth.svg'
 import HomeImg from '../assets/icons/home.svg'
 import CartImg from '../assets/icons/card.svg'
 import RegImg from '../assets/icons/reg.svg'
+import RegisterSection from './RegisterSection';
+
+import React, { useState } from 'react';
+import AuthSection from './AuthSection';
 
 export default function Head() {
+
+    const OpenHandler = () => {
+        document.querySelector('.register__block').classList.remove('sc-0')
+    }
+    const OpenAuth = () => {
+        document.querySelector('.user__auth').classList.remove('sc-0')
+    }
     return (
+        <>
         <header className="header">
             <div className="container">
                 <div className="header__body">
@@ -14,11 +26,11 @@ export default function Head() {
                             <img src={Logo} alt="" />
                         </a>
                         <div className="header__body-top-btns">
-                            <button>
+                            <button onClick={OpenHandler}>
                                 <img src={RegImg} alt="" />
                                 <span>Регистрация</span>
                             </button>
-                            <button>
+                            <button onClick={OpenAuth}>
                                 <img src={AuthImg} alt="" />
                                 <span>Войти</span>
                             </button>
@@ -78,5 +90,9 @@ export default function Head() {
                 </div>
             </div>
         </header>
+        <RegisterSection className=""/>
+        <AuthSection/>
+        </>
     )
 }
+

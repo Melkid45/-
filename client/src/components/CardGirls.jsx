@@ -141,9 +141,9 @@ export default function () {
       <span className="girls__card-top">
         TOP
       </span>
-      <button className="girls__card-btn">
+      <a href='/girl' className="girls__card-btn">
         ПОДРОБНЕЕ
-      </button>
+      </a>
     </div>
   )
 }
