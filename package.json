@@ -20,12 +20,13 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-hook-form": "^7.51.4",
-    "react-router-dom": "^6.23.0",
+    "react-router-dom": "^6.29.0",
     "sass": "^1.77.0",
     "vercel": "^41.0.2",
     "yup": "^1.4.0"
   },
   "devDependencies": {
+    "@netlify/vite-plugin-react-router": "^1.0.0",
     "@types/react": "^18.2.66",
     "@types/react-dom": "^18.2.22",
     "@vitejs/plugin-react": "^4.2.1",
