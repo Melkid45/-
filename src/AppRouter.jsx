@@ -9,7 +9,6 @@ export default function AppRouter() {
                 <Route key={path} path={path} element={<Component/>} exact/>
             )}
             <Route path="*" element={<Home />} />
-            <Route path="/girls" element={<Girls />} />
         </Routes>
         
     )
