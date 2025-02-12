@@ -15,11 +15,9 @@ function App() {
     <Head/>
     
           <Routes>
-            {/* {publicRoutes.map(({path , Component}) => 
+            {publicRoutes.map(({path , Component}) => 
                 <Route key={path} path={path} element={<Component/>} exact/>
-            )} */}
-            <Route path="/girl" element={<Girl />} />
-            <Route path="/girls" element={<Girls />} />
+            )}
             <Route path="*" element={<Home />} />
         </Routes>
     <Footer/>

@@ -7,6 +7,7 @@ import Comment from '../assets/icons/comment__col.svg'
 import Video from '../assets/icons/video.svg'
 import Star from '../assets/icons/star.svg'
 import New from '../assets/icons/new.svg'
+import { Link } from 'react-router-dom'
 export default function () {
   return (
     <div className='girls__card'>
@@ -141,9 +142,9 @@ export default function () {
       <span className="girls__card-top">
         TOP
       </span>
-      <a href='/girl' className="girls__card-btn">
+      <Link to={'girl'} className="girls__card-btn">
         ПОДРОБНЕЕ
-      </a>
+      </Link>
     </div>
   )
 }
