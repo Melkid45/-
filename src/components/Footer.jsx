@@ -17,13 +17,10 @@ export default function Footer() {
           </div>
           <div className="footer__body-right">
             <div className="footer__body-right-chat">
-              <div className="footer__body-right-chat-wrap desk">
+              <div className="footer__body-right-chat-wrap">
                 <img src={Chat} alt="" />
                 <span>ЧАТ</span>
               </div>
-              <a className='mob' href="">
-                Чат
-              </a>
               <a href="">
                 Техподдержка
               </a>

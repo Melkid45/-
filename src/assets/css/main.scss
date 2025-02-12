@@ -86,20 +86,24 @@ body{
           align-items: center;
           gap: 5px;
           padding: 6px 10px;
+          transition: all 0.3s ease;
             img{
-              max-width: 35px;
-              max-height: 35px;
+              max-width: 30px;
+              max-height: 30px;
             }
             span{
               font-family: var(--kur);
-              font-size: 28px;
+              font-size: 22px;
               font-weight: 400;
-              line-height: 40px;
+              line-height: 36px;
               text-align: left;
               text-underline-position: from-font;
               text-decoration-skip-ink: none;
               color: #fff;
             }
+        }
+        button:hover{
+          scale: 1.1;
         }
       }
     }
@@ -111,10 +115,14 @@ body{
       &-icons{
         max-width: 45px;
         max-height: 45px;
+        transition: all 0.3s ease;
         img{
           width: 100%;
           height: 100%;
         }
+      }
+      &-icons:hover{
+        scale: 1.1;
       }
       nav{
         ul{
@@ -139,6 +147,7 @@ body{
           }
           li:hover{
             color: #E40AA0;
+            scale: 1.05;
           }
         }
       }
@@ -173,7 +182,7 @@ body{
       transition: all 0.3s ease;
     }
     &-item:hover{
-      font-size: 26px;
+      scale: 1.05;
     }
   }
 }
@@ -1859,9 +1868,13 @@ body{
           display: flex;
           align-items: center;
           justify-content: center;
+          transition: all 0.3s ease;
         }
         button:nth-child(2){
           color: #E40AA0;
+        }
+        button:hover{
+          scale: 1.05;
         }
       }
       &-bot{
@@ -1881,6 +1894,10 @@ body{
         display: flex;
         align-items: center;
         justify-content: center;
+        transition: all 0.3s ease;
+      }
+      &-bot:hover{
+        scale: 1.05;
       }
     }
   }
@@ -1920,6 +1937,10 @@ body{
         text-underline-position: from-font;
         text-decoration-skip-ink: none;
         color: #fff;
+        transition: all 0.3s ease;
+      }
+      &-item:hover{
+        scale: 1.05;
       }
     }
   }
@@ -1951,6 +1972,10 @@ body{
         text-decoration-skip-ink: none;
         color: #fff;
         text-decoration: underline;
+        transition: all 0.3s ease;
+      }
+      &-item:hover{
+        scale: 1.05;
       }
     }
   }
@@ -1990,6 +2015,10 @@ body{
           text-underline-position: from-font;
           text-decoration-skip-ink: none;
           color: #fff;
+          transition: all 0.3s ease;
+        }
+        &-item:hover{
+          scale: 1.05;
         }
     }
   }
@@ -2028,6 +2057,10 @@ body{
           text-underline-position: from-font;
           text-decoration-skip-ink: none;
           color: #fff;
+          transition: all 0.3s ease;
+      }
+      &-item:hover{
+        scale: 1.05;
       }
     }
   }
@@ -2585,6 +2618,10 @@ body{
             padding: 16px 24px;
             border: 1px solid #E40AA0;
             border-radius: 5px;
+            display: flex;
+            flex-direction: column;
+            align-self: flex-end;
+            gap: 8px;
           }
           button{
             font-family: var(--kur);
@@ -4702,14 +4739,14 @@ body{
             gap: 5rem;
             padding: 6rem 10rem;
               img{
-                max-width: 35rem;
-                max-height: 35rem;
+                max-width: 30rem;
+                max-height: 30rem;
               }
               span{
                 font-family: var(--kur);
-                font-size: 28rem;
+                font-size: 22rem;
                 font-weight: 400;
-                line-height: 40rem;
+                line-height: 36rem;
                 text-align: left;
                 text-underline-position: from-font;
                 text-decoration-skip-ink: none;
@@ -4784,7 +4821,7 @@ body{
         transition: all 0.3s ease;
       }
       &-item:hover{
-        font-size: 26rem;
+        scale: 1.05;
       }
     }
   }
@@ -7202,6 +7239,10 @@ body{
               padding: 16rem 24rem;
               border: 1rem solid #E40AA0;
               border-radius: 5rem;
+              display: flex;
+              flex-direction: column;
+              align-self: flex-end;
+              gap: 8rem;
             }
             button{
               font-family: var(--kur);
@@ -9525,7 +9566,7 @@ body{
         transition: all 0.3s ease;
       }
       &-item:hover{
-        padding-top: 15rem;
+        scale: 1.05;
       }
     }
   }
@@ -11656,7 +11697,7 @@ body{
             display: flex;
             flex-direction: column;
             padding-left: 0rem;
-            padding-top: 60rem;
+            padding-top: 40rem;
             padding-bottom: 15rem;
             border-bottom: 1rem solid #E40AA0;
             &-title{
@@ -11775,7 +11816,7 @@ body{
             }
             &-dop{
               position: absolute;
-              top: -20rem;
+              top: -25rem;
               left: 0rem;
               right: auto;
               display: flex;
@@ -11783,8 +11824,8 @@ body{
               gap: 30rem;
               &-right{
                 border-radius: 50%;
-                width: 92rem;
-                height: 92rem;
+                width: 70rem;
+                height: 70rem;
                 display: flex;
                 flex-direction: column;
                 align-items: center;
@@ -11792,9 +11833,9 @@ body{
                 background: #FF5FCD33;
                 p:nth-child(1){
                   font-family: var(--oleo);
-                  font-size: 20rem;
+                  font-size: 16rem;
                   font-weight: 400;
-                  line-height: 20rem;
+                  line-height: 16rem;
                   text-align: left;
                   text-underline-position: from-font;
                   text-decoration-skip-ink: none;
@@ -11812,9 +11853,9 @@ body{
                 }
                 span{
                   font-family: var(--oleo);
-                  font-size: 30rem;
+                  font-size: 20rem;
                   font-weight: 400;
-                  line-height: 30rem;
+                  line-height: 20rem;
                   text-align: left;
                   text-underline-position: from-font;
                   text-decoration-skip-ink: none;

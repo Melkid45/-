@@ -290,10 +290,10 @@ export default function Girl() {
                   Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt cum ad mollitia? Necessitatibus incidunt obcaecati alias repellendus quasi eligendi aliquid, minima cum accusantium rem, totam veritatis vitae harum nesciunt ipsam.
                   Culpa doloribus quod dolor ea totam minima tempore officia error aliquid ab magni iste delectus neque, illo non hic ad voluptatibus. Hic voluptates voluptatibus libero facilis, odit eaque molestias sint!
                   Iure libero minima incidunt dolorum nemo, necessitatibus temporibus! Alias assumenda explicabo in vitae voluptate ex pariatur accusantium. Tenetur commodi fugiat hic dicta a, reprehenderit ipsum, numquam vel cum magnam quasi?
+                  <button>
+                    ПОДРОБНЕЕ
+                  </button>
                 </p>
-                <button>
-                  ПОДРОБНЕЕ
-                </button>
               </div>
               <div className="girl__body-card-end-right">
                 <span className="girl__body-card-end-right-title">

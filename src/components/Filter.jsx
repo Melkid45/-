@@ -259,7 +259,7 @@ export default function Filter() {
           <button className="filter__stroke-wrap-item">Интим фото</button>
         </div>
       </div>
-      <div className="filter__select mob">
+      {/* <div className="filter__select mob">
         <div className="filter__select-body">
           <span className="filter__select-body-main">Город</span>
           <div className="filter__select-body-choose">
@@ -297,7 +297,7 @@ export default function Filter() {
           </div>
           <button className="filter__category-wrap-bot">Рекомендуемые</button>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }
