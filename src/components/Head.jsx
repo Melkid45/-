@@ -60,10 +60,10 @@ export default function Head() {
                     <Link to={'girls'}>Девушки</Link>
                   </li>
                   <li>
-                    <a href="/guys">Парни</a>
+                    <Link to={'guys'}>Парни</Link>
                   </li>
                   <li>
-                    <a href="/firma">Фирмы,салоны</a>
+                    <Link to={'firma'}>Фирмы,салоны</Link>
                   </li>
                   <li className="vip">
                     <a href="">Vip</a>
@@ -77,7 +77,7 @@ export default function Head() {
                   </li>
 
                   <li>
-                    <a href="">Объявления</a>
+                    <Link to={'company-account'}>Объявления</Link>
                   </li>
                 </ul>
               </nav>
@@ -89,13 +89,13 @@ export default function Head() {
               <nav>
                 <ul>
                   <li>
-                    <a href="/girls">Девушки</a>
+                    <Link to={'girls'}>Девушки</Link>
                   </li>
                   <li>
-                    <a href="/guys">Парни</a>
+                    <Link to={'guys'}>Парни</Link>
                   </li>
                   <li>
-                    <a href="/firma">Фирмы,салоны</a>
+                    <Link to={'firma'}>Фирмы,салоны</Link>
                   </li>
                   <li className="vip">
                     <a href="">Vip</a>
@@ -107,7 +107,7 @@ export default function Head() {
                     <a href="">Баннеры</a>
                   </li>
                   <li>
-                    <a href="">Объявления</a>
+                    <Link to={'company-account'}>Объявления</Link>
                   </li>
                   <li onClick={OpenList} className="header__body-mob-dop">
                     <span>
