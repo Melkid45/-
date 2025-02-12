@@ -73,7 +73,7 @@ export default function Head() {
                   </li>
 
                   <li>
-                    <a href="">Баннеры</a>
+                    <Link to={'user-account'}>Баннеры</Link>
                   </li>
 
                   <li>
@@ -104,7 +104,7 @@ export default function Head() {
                     <a href="">Top</a>
                   </li>
                   <li>
-                    <a href="">Баннеры</a>
+                    <Link to={'user-account'}>Баннеры</Link>
                   </li>
                   <li>
                     <Link to={'company-account'}>Объявления</Link>
