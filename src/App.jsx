@@ -6,6 +6,8 @@ import Head from './components/Head';
 import Footer from './components/Footer';
 import { publicRoutes } from './routes';
 import Home from './pages/Home';
+import Girl from './pages/Girl';
+import Girls from './pages/Girls';
 function App() {
 
   return (
@@ -13,9 +15,11 @@ function App() {
     <Head/>
     
           <Routes>
-            {publicRoutes.map(({path , Component}) => 
+            {/* {publicRoutes.map(({path , Component}) => 
                 <Route key={path} path={path} element={<Component/>} exact/>
-            )}
+            )} */}
+            <Route path="/girl" element={<Girl />} />
+            <Route path="/girls" element={<Girls />} />
             <Route path="*" element={<Home />} />
         </Routes>
     <Footer/>

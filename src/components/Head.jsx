@@ -57,7 +57,7 @@ export default function Head() {
               <nav>
                 <ul>
                   <li>
-                    <a href="/girls">Девушки</a>
+                    <Link to={'girls'}>Девушки</Link>
                   </li>
                   <li>
                     <a href="/guys">Парни</a>
