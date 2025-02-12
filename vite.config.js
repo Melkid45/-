@@ -6,6 +6,7 @@ export const pathResolver = (p) => resolve(__dirname, '.', p);
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  base: './',
   plugins: [
     react(),
   ],
