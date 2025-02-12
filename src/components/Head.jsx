@@ -4,7 +4,7 @@ import HomeImg from "../assets/icons/home.svg";
 import CartImg from "../assets/icons/card.svg";
 import RegImg from "../assets/icons/reg.svg";
 import RegisterSection from "./RegisterSection";
-
+import { Link } from "react-router-dom";
 import React, { useState } from "react";
 import AuthSection from "./AuthSection";
 
