@@ -142,7 +142,7 @@ export default function () {
       <span className="girls__card-top">
         TOP
       </span>
-      <Link to={'girl'} className="girls__card-btn">
+      <Link to={'girl'} replace className="girls__card-btn">
         ПОДРОБНЕЕ
       </Link>
     </div>
