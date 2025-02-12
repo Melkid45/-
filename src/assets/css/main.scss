@@ -1975,7 +1975,7 @@ body{
         transition: all 0.3s ease;
       }
       &-item:hover{
-        scale: 1.05;
+        transform: scale(1.1);
       }
     }
   }
@@ -3075,6 +3075,7 @@ body{
             text-align: left;
             text-underline-position: from-font;
             text-decoration-skip-ink: none;
+            transition: all 0.3s ease;
           }
           button{
             padding: 11px 25px;
@@ -3088,6 +3089,13 @@ body{
             text-align: left;
             text-underline-position: from-font;
             text-decoration-skip-ink: none;
+            transition: all 0.3s ease;
+          }
+          button:hover{
+            scale: 1.05;
+          }
+          a:hover{
+            scale: 1.05;
           }
         }
         span{
@@ -3147,6 +3155,7 @@ body{
             text-decoration-skip-ink: none;
             color: #fff;
             max-width: max-content;
+            transition: all 0.3s ease;
           }
           button{
             padding: 2px 8px;
@@ -3162,6 +3171,13 @@ body{
             text-decoration-skip-ink: none;
             color: #fff;
             max-width: max-content;
+            transition: all 0.3s ease;
+          }
+          button:hover{
+            scale: 1.05;
+          }
+          a:hover{
+            scale: 1.05;
           }
         }
         ul{
