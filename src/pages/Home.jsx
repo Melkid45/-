@@ -2,125 +2,53 @@ import React from "react";
 import { Splide, SplideSlide, SplideTrack } from "@splidejs/react-splide";
 import '@splidejs/react-splide/css';
 import CardGirl from '../components/CardGirls'
+import Search from '../assets/icons/search.svg'
 import Tabs from '../components/Tabs'
+import Filter from '../components/Filter'
+import CardGirls from '../components/CardGirls'
 export default function Home() {
+
+  const OpenFilter = () => {
+    document.querySelector('.filter').classList.add('active')
+  }
   return (
     <>
     <Tabs/>
-    <section className="home">
+    <section className='girls'>
       <div className="container">
-        <div className="home__body">
-          <div className="home__body-category">
-            <h1>Девушки со статусом TOP</h1>
-          <Splide aria-label=""
-          options={ {
-            rewind: true,
-            arrows: true,
-            pagination: false
-          } }>
-              <SplideSlide>
-                <CardGirl/>
-              </SplideSlide>
-              <SplideSlide>
-                <CardGirl/>
-              </SplideSlide>
-              <SplideSlide>
-                <CardGirl/>
-              </SplideSlide>
-              <SplideSlide>
-                <CardGirl/>
-              </SplideSlide>
-              <SplideSlide>
-                <CardGirl/>
-              </SplideSlide>
-              <SplideSlide>
-                <CardGirl/>
-              </SplideSlide>
-          </Splide>
+        <div className="girls__body">
+          <div className="girls__body-top">
+            <h1>Ночные бабачки (город)</h1>
+            <div className="girls__body-top-wrap">
+            <div className="girls__body-top-search">
+              <input placeholder='ПОИСК' type="text" />
+              <img src={Search} alt="" />
+            </div>
+            <button onClick={OpenFilter} className='open__filter mob'>
+              Открыть Фильтр
+            </button>
+            </div>
+            
+
           </div>
-          <div className="home__body-category">
-            <h2>Девушки со статусом VIP</h2>
-          <Splide aria-label=""
-          options={ {
-            rewind: true,
-            arrows: true,
-            pagination: false
-          } }>
-              <SplideSlide>
-                <CardGirl/>
-              </SplideSlide>
-              <SplideSlide>
-                <CardGirl/>
-              </SplideSlide>
-              <SplideSlide>
-                <CardGirl/>
-              </SplideSlide>
-              <SplideSlide>
-                <CardGirl/>
-              </SplideSlide>
-              <SplideSlide>
-                <CardGirl/>
-              </SplideSlide>
-              <SplideSlide>
-                <CardGirl/>
-              </SplideSlide>
-          </Splide>
-          </div>
-          <div className="home__body-category">
-            <h3>Новые анкеты девушек</h3>
-          <Splide aria-label=""
-          options={ {
-            rewind: true,
-            arrows: true,
-            pagination: false
-          } }>
-              <SplideSlide>
-                <CardGirl/>
-              </SplideSlide>
-              <SplideSlide>
-                <CardGirl/>
-              </SplideSlide>
-              <SplideSlide>
-                <CardGirl/>
-              </SplideSlide>
-              <SplideSlide>
-                <CardGirl/>
-              </SplideSlide>
-              <SplideSlide>
-                <CardGirl/>
-              </SplideSlide>
-              <SplideSlide>
-                <CardGirl/>
-              </SplideSlide>
-          </Splide>
-          </div>
-          <div className="home__body-category">
-            <h3>Самые комментрируемые</h3>
-          <Splide aria-label=""
-          options={ {
-            rewind: true,
-            arrows: true,
-            pagination: false
-          } }>
-              <SplideSlide>
-                <CardGirl/>
-              </SplideSlide>
-              <SplideSlide>
-                <CardGirl/>
-              </SplideSlide>
-              <SplideSlide>
-                <CardGirl/>
-              </SplideSlide>
-              <SplideSlide>
-                <CardGirl/>
-              </SplideSlide>
-              <SplideSlide>
-                <CardGirl/>
-              </SplideSlide>
-              <SplideSlide>
-                <CardGirl/>
-              </SplideSlide>
-          </Splide>
+          <div className="girls__body-block">
+            <div className="girls__body-block-list">
+              <CardGirls/>
+              <CardGirls/>
+              <CardGirls/>
+              <CardGirls/>
+              <CardGirls/>
+              <CardGirls/>
+              <CardGirls/>
+              <CardGirls/>
+              <CardGirls/>
+              <CardGirls/>
+              <CardGirls/>
+              <CardGirls/>
+              <CardGirls/>
+              <CardGirls/>
+            </div>
+            <Filter/>
           </div>
         </div>
       </div>

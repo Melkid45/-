@@ -7,7 +7,7 @@ import Tg from '../assets/icons/tg.svg'
 import Wt from '../assets/icons/wt.svg'
 import like from '../assets/icons/like.svg'
 import Favor from '../assets/icons/favor.png'
-import Link from '../assets/icons/link.svg'
+import LinkSite from '../assets/icons/link.svg'
 
 import FirmaOne from '../assets/images/firma/1.avif'
 import FirmaTwo from '../assets/images/firma/2.avif'
@@ -33,6 +33,9 @@ import Icons11 from '../assets/icons/adv/11.svg'
 import Video from '../assets/images/firma__video.avif'
 import Comments from '../components/Comments'
 
+import { Link } from 'react-router-dom'
+import CardGirls from '../components/CardGirls'
+
 
 export default function Firma() {
   return (
@@ -53,7 +56,7 @@ export default function Firma() {
               </button>
             </div>
             <a href='' className="firma__body-info-link">
-              <img src={Link} alt="" />
+              <img src={LinkSite} alt="" />
               Перейти на сайт  фирмы
             </a>
               <div className="firma__body-info-start">
@@ -85,7 +88,7 @@ export default function Firma() {
                 <div className="firma__body-info-name-contact">
                   <img className='desk' src={Tel} alt="" />
                   <div className="firma__body-info-name-contact-info">
-                    <a className='firma__body-info-name-contact-info-tel' href="">
+                    <a className='firma__body-info-name-contact-info-tel' href="tel:89142186548">
                       8(914)218-65-48
                     </a>
                     <div className="firma__body-info-name-contact-info-social">
@@ -263,7 +266,7 @@ export default function Firma() {
                   </div>
                   <div className="firma__body-girls-block-bot">
                     <div className="firma__body-girls-block-bot-list">
-                      <div className="firma__body-girls-block-bot-list-item">
+                      <Link to='/girl' className="firma__body-girls-block-bot-list-item">
                         <div className="firma__body-girls-block-bot-list-item-wrap">
                           <img src={Girl} alt="" />
                           <span className='circle'></span>
@@ -272,8 +275,8 @@ export default function Firma() {
                           <span>(Имя)</span>
                           <p>в смене</p>
                         </div>
-                      </div>
-                      <div className="firma__body-girls-block-bot-list-item">
+                      </Link>
+                      <Link to='/girl' className="firma__body-girls-block-bot-list-item">
                         <div className="firma__body-girls-block-bot-list-item-wrap">
                           <img src={Girl} alt="" />
                           <span className='circle'></span>
@@ -282,8 +285,8 @@ export default function Firma() {
                           <span>(Имя)</span>
                           <p>в смене</p>
                         </div>
-                      </div>
-                      <div className="firma__body-girls-block-bot-list-item">
+                      </Link>
+                      <Link to='/girl' className="firma__body-girls-block-bot-list-item">
                         <div className="firma__body-girls-block-bot-list-item-wrap">
                           <img src={Girl} alt="" />
                           <span className='circle'></span>
@@ -292,8 +295,8 @@ export default function Firma() {
                           <span>(Имя)</span>
                           <p>в смене</p>
                         </div>
-                      </div>
-                      <div className="firma__body-girls-block-bot-list-item">
+                      </Link>
+                      <Link to='/girl' className="firma__body-girls-block-bot-list-item">
                         <div className="firma__body-girls-block-bot-list-item-wrap">
                           <img src={Girl} alt="" />
                           <span className='circle'></span>
@@ -302,8 +305,8 @@ export default function Firma() {
                           <span>(Имя)</span>
                           <p>в смене</p>
                         </div>
-                      </div>
-                      <div className="firma__body-girls-block-bot-list-item">
+                      </Link>
+                      <Link to='/girl' className="firma__body-girls-block-bot-list-item">
                         <div className="firma__body-girls-block-bot-list-item-wrap">
                           <img src={Girl} alt="" />
                           <span className='circle'></span>
@@ -312,8 +315,8 @@ export default function Firma() {
                           <span>(Имя)</span>
                           <p>в смене</p>
                         </div>
-                      </div>
-                      <div className="firma__body-girls-block-bot-list-item">
+                      </Link>
+                      <Link to='/girl' className="firma__body-girls-block-bot-list-item">
                         <div className="firma__body-girls-block-bot-list-item-wrap">
                           <img src={Girl} alt="" />
                           <span className='circle'></span>
@@ -322,8 +325,8 @@ export default function Firma() {
                           <span>(Имя)</span>
                           <p>в смене</p>
                         </div>
-                      </div>
-                      <div className="firma__body-girls-block-bot-list-item">
+                      </Link>
+                      <Link to='/girl' className="firma__body-girls-block-bot-list-item">
                         <div className="firma__body-girls-block-bot-list-item-wrap">
                           <img src={Girl} alt="" />
                           <span className='circle'></span>
@@ -332,8 +335,8 @@ export default function Firma() {
                           <span>(Имя)</span>
                           <p>в смене</p>
                         </div>
-                      </div>
-                      <div className="firma__body-girls-block-bot-list-item">
+                      </Link>
+                      <Link to='/girl' className="firma__body-girls-block-bot-list-item">
                         <div className="firma__body-girls-block-bot-list-item-wrap">
                           <img src={Girl} alt="" />
                           <span className='circle'></span>
@@ -342,7 +345,7 @@ export default function Firma() {
                           <span>(Имя)</span>
                           <p>в смене</p>
                         </div>
-                      </div>
+                      </Link>
                     </div>
                     <div className="firma__body-girls-block-bot-graphic">
                       <div className="firma__body-girls-block-bot-graphic-row">

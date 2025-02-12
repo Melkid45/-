@@ -33,10 +33,10 @@ export default function Footer() {
             </a>
           </div>
           </div>
-          <a href='' className="footer__body-name">
+          <div className="footer__body-name">
             <img src={Lotos} alt="" />
             www.eskortplus.one
-          </a>
+          </div>
         </div>
       </div>
     </footer>

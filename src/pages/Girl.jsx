@@ -22,6 +22,7 @@ import Comments from '../components/Comments'
 
 import { Splide, SplideSlide, SplideTrack } from "@splidejs/react-splide";
 import '@splidejs/react-splide/css';
+import { Link } from 'react-router-dom'
 
 export default function Girl() {
   return (
@@ -100,7 +101,7 @@ export default function Girl() {
               <div className="girl__body-card-end-info">
                 <div className="girl__body-card-end-info-title">
                   <h1>Карина</h1>
-                  <div className="girl__body-card-end-info-title-chat">
+                  <div onClick={() => document.getElementById('comm')?.scrollIntoView({behavior: 'smooth'})} className="girl__body-card-end-info-title-chat">
                     <img src={Chat} alt="" />
                     <span>23</span>
                   </div>
@@ -290,6 +291,9 @@ export default function Girl() {
                   Culpa doloribus quod dolor ea totam minima tempore officia error aliquid ab magni iste delectus neque, illo non hic ad voluptatibus. Hic voluptates voluptatibus libero facilis, odit eaque molestias sint!
                   Iure libero minima incidunt dolorum nemo, necessitatibus temporibus! Alias assumenda explicabo in vitae voluptate ex pariatur accusantium. Tenetur commodi fugiat hic dicta a, reprehenderit ipsum, numquam vel cum magnam quasi?
                 </p>
+                <button>
+                  ПОДРОБНЕЕ
+                </button>
               </div>
               <div className="girl__body-card-end-right">
                 <span className="girl__body-card-end-right-title">
@@ -318,6 +322,10 @@ export default function Girl() {
                   </li>
                 </ul>
                 <span className='girl__body-card-end-right-imp'>Важно!</span>
+                <p className='girl__body-card-end-right-desc'>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius rerum, at ad eos quae praesentium nisi corrupti vitae! Autem aut architecto beatae nostrum, quos aliquam voluptas provident saepe maxime accusamus.
+                  Error tempora repudiandae alias suscipit praesentium cupiditate dolore animi nihil sed optio cum, eum exercitationem ullam omnis fugiat id officia! Inventore cum dolores itaque rem porro sed ullam fugiat autem!
+                </p>
               </div>
               
             </div>

@@ -2,12 +2,20 @@ import React from "react";
 import MenuUser from "../components/MenuUser";
 
 export default function UserAccount() {
+
+  const OpenMenu = () => {
+    document.querySelector('.account__body-block-navigation').classList.add('active')
+  }
+
   return (
     <section className="account">
       <div className="container">
         <div className="account__body">
           <span className="account__body-first">
             (Имя) Вы успешно авторизовались ан сайте.
+            <button onClick={OpenMenu} className="mob">
+              Открыть Меню
+            </button>
           </span>
           <div className="account__body-block">
             <div className="account__body-block-main">

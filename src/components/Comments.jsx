@@ -33,7 +33,7 @@ export default function Comments() {
 
 
   return (
-    <div className='comment'>
+    <div id='comm' className='comment'>
         <span className='comment__title'>
             Комментарии:
         </span>

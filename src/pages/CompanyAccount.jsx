@@ -124,7 +124,7 @@ export default function CompanyAccount() {
         <div className="container">
             <div className="sale__body">
                 <span>Акции!</span>
-                <p>Здесь анходятся данные об акциях которые проводит администрация сайта. </p>
+                <p>Здесь находятся данные об акциях которые проводит администрация сайта. </p>
                 <ul className="sale__body-block">
                     <li className="sale__body-block-item">
                         1. Скидка на подписку PRO 50% <a href="/my-profiles">(Перейти на страницу)</a>

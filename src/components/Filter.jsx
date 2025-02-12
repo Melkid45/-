@@ -51,10 +51,12 @@ export default function Filter() {
   }
   return (
     <div className="filter">
-      <button onClick={CloseFilter} className="close__filter">
+      <button onClick={CloseFilter} className="close__filter mob">
         <span></span>
         <span></span>
       </button>
+      
+      <div className="filter__category desk">
       <div className="filter__select desk">
         <div className="filter__select-body">
           <span className="filter__select-body-main">Город</span>
@@ -70,16 +72,11 @@ export default function Filter() {
           <img src={Triangle} alt="" />
         </button>
       </div>
-      <div className="filter__category desk">
         <div className="filter__select">
           <div className="filter__select-body">
-            <span className="filter__select-body-main">Город</span>
+            <span className="filter__select-body-main">Работают(00)</span>
             <div className="filter__select-body-choose">
-              <span>Город 1</span>
-              <span>Город 2</span>
-              <span>Город 3</span>
-              <span>Город 4</span>
-              <span>Город 5</span>
+              <span>Отдыхают(00)</span>
             </div>
           </div>
           <button
@@ -170,7 +167,7 @@ export default function Filter() {
           <button className="filter__list-wrap-item">Стриптиз</button>
           <button className="filter__list-wrap-item">Есть подружка </button>
           <button className="filter__list-wrap-item">
-            Обслуживаю мальчишники{" "}
+            Обслуживаю Мальчишники
           </button>
           <button className="filter__list-wrap-item">Веб-камера</button>
         </div>
@@ -280,13 +277,9 @@ export default function Filter() {
       <div className="filter__category mob">
         <div className="filter__select">
           <div className="filter__select-body">
-            <span className="filter__select-body-main">Город</span>
+            <span className="filter__select-body-main">Работают(00)</span>
             <div className="filter__select-body-choose">
-              <span>Город 1</span>
-              <span>Город 2</span>
-              <span>Город 3</span>
-              <span>Город 4</span>
-              <span>Город 5</span>
+              <span>Отдыхают(00)</span>
             </div>
           </div>
           <button

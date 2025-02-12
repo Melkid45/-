@@ -44,7 +44,7 @@ export default function Head() {
                   <span>Войти</span>
                 </button>
               </div>
-              <div onClick={OpenHeader} className="burger">
+              <div onClick={OpenHeader} className="burger mob">
                 <span></span>
                 <span></span>
                 <span></span>
