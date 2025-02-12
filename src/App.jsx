@@ -1,9 +1,11 @@
 import './assets/css/main.scss'
-import AppRouter from './AppRouter'
+import {Route, Routes } from 'react-router-dom'
 import { BrowserRouter } from 'react-router-dom'
 import LocomotiveScroll from 'locomotive-scroll';
 import Head from './components/Head';
 import Footer from './components/Footer';
+import { publicRoutes } from './routes';
+import Home from './pages/Home';
 function App() {
   const locomotiveScroll = new LocomotiveScroll({
     lenisOptions: {
@@ -26,7 +28,12 @@ function App() {
     <>
     <Head/>
     <BrowserRouter>
-        <AppRouter></AppRouter>
+            <Routes>
+            {publicRoutes.map(({path , Component}) => 
+                <Route key={path} path={path} element={<Component/>} exact/>
+            )}
+            <Route path="*" element={<Home />} />
+        </Routes>
     </BrowserRouter>
     <Footer/>
     </>
