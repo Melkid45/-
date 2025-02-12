@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, replace } from "react-router-dom";
 export default function MenuUser() {
   return (
     <div className="account__body-block-navigation">
@@ -8,7 +8,7 @@ export default function MenuUser() {
       </span>
       <ul>
         <li>
-          <Link to={'favorite'}>Отложенные анкеты</Link>
+          <Link to={'favorite'} replace>Отложенные анкеты</Link>
         </li>
         <li>
           <a href="">Комментарии</a>
